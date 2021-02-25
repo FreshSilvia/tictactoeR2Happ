@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main--container{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 100vh;
+}
+.logo{
+  background-color: white;
+  padding: 6px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+}
+.board--container{
+  display: flex;
+}
+.board{
+  box-shadow: black 2px 5px 20px;
+}
+.board--row{
+  display: flex;
+}
+.status{
+  font-size: 2.5rem;
+  margin: 25px;
+}
+.winner{
+  color: black;
+  background-image: url('./img/confetti.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.draw{
+  color: black;
+  background-color: lightgray;
+}
+.X{
+  background-color: #153d5b;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.O{
+  background-color: #26c3c4;
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img{
+  height: 100px;
+}
+.null{
+  background-color: grey;
+}
+.reset--button{
+  font-size: 1.5rem;
+  background: aquamarine;
+  margin: 30px;
+  height: 80px;
+  width: 250px;
+  border-radius: 20px;
+  border: white solid 5px;
+  box-shadow: black 2px 5px 20px;
+}
+.square{
+  height: 200px;
+  width: 200px;
+  border: 2px solid black;
+  font-size: 4rem;
 }
